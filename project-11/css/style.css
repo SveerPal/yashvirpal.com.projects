@@ -1,0 +1,318 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+body {
+  background-color: #fdfeff;
+}
+section,
+header,
+footer {
+  margin: 0 5%;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+header ul li {
+  display: inline-block;
+  color: #5c5c5c;
+  font-size: 20px;
+  padding: 0 25px;
+}
+header ul li a {
+  border: 1px solid #078af0;
+  padding: 10px 20px;
+  color: #078af0;
+  text-decoration: none;
+  border-radius: 6px;
+}
+header ul li:first-child {
+  color: #000;
+}
+
+section.servicesection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+section.servicesection > div {
+  width: 50%;
+}
+section.servicesection h1 {
+  font-size: 86px;
+  color: #14263f;
+}
+section.servicesection p {
+  font-size: 28px;
+  padding: 25px 0;
+  color: #798196;
+}
+section.servicesection button {
+  background: linear-gradient(to right bottom, #09c1f8, #0469eb);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  margin: 50px 0;
+  box-shadow: -1px 5px 30px #dae9f7;
+}
+section.servicesection img {
+  width: 95%;
+}
+/******** Service Provid Heading ***/
+.serviceprovidelist .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.serviceprovidelist .heading > div {
+  width: 50%;
+}
+.serviceprovidelist .heading h2 {
+  font-size: 73px;
+  color: #1d2b4f;
+}
+.serviceprovidelist .heading p {
+  font-size: 28px;
+  padding: 25px 0;
+  color: #798196;
+}
+/******** Service Provid Heading ***/
+.serviceprovidelist .servicelist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.serviceprovidelist .servicelist > div {
+  width: 30%;
+}
+.serviceprovidelist .servicelist h2 {
+  font-size: 30px;
+  color: #1d2b4f;
+  padding-top: 30px;
+}
+.serviceprovidelist .servicelist p {
+  color: #798196;
+  text-align: justify;
+  padding: 30px 0;
+}
+.serviceprovidelist .servicelist img {
+  width: 60px;
+}
+/************** Flex Price *********/
+.flexprice {
+  background-color: #056aeb;
+  color: #1d2b4f;
+  margin: 0;
+}
+.flexprice h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 75px;
+  padding: 30px 0;
+}
+.pricelist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  margin: 0 5%;
+}
+
+.pricelist .package {
+  background-color: #fff;
+  padding: 25px 30px;
+  width: 28%;
+  border-radius: 20px;
+}
+.package h3 {
+  font-size: 40px;
+}
+.package p {
+  padding: 20px 0;
+  font-size: 22px;
+}
+.package ul {
+  margin: 38px 0;
+}
+.package ul li {
+  list-style-type: none;
+  font-size: 22px;
+  padding: 10px 0;
+}
+.package ul li::before {
+  content: "\2713";
+  color: #06d6a0;
+  margin-right: 10px;
+  border: 1px solid #06d6a0;
+  border-radius: 25px;
+}
+.price {
+  text-align: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.price span {
+  color: #798196;
+}
+.price p {
+  font-size: 40px;
+  font-weight: bold;
+}
+.price h6 {
+  font-size: 20px;
+}
+.price button {
+  margin: 20px 0;
+  color: #068af0;
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: 1px solid #068af0;
+  font-size: 20px;
+  background-color: #fff;
+}
+.package:nth-child(2) .price button {
+  background: linear-gradient(to right bottom, #09c1f8, #0469eb);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  margin: 20px 0;
+  box-shadow: -1px 5px 30px #dae9f7;
+}
+.package:nth-child(2) {
+  background: linear-gradient(#353535 23%, #fff 23%) no-repeat;
+}
+.package:nth-child(2) h3 {
+  color: #fff;
+}
+.package:nth-child(2) h3 + p {
+  color: #b3b3b3;
+}
+/******** Testimonials ********/
+.testimonialheading {
+  text-align: center;
+  margin-top: 150px;
+}
+.testimonialheading h1 {
+  color: #1d2b4f;
+  font-size: 50px;
+}
+.testimonialheading p {
+  padding: 33px 20%;
+  font-size: 20px;
+  color: #8991a3;
+}
+.testimoniallist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.testimonials {
+  width: 45%;
+  border-radius: 8px;
+  border: 1px solid #8991a3;
+  margin: 20px 0;
+  padding: 35px;
+}
+.testimonials p {
+  color: #727b91;
+}
+.tdetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.tname {
+  margin-left: 15px;
+}
+.tname h6 {
+  font-size: 18px;
+  padding: 5px 0;
+}
+.register {
+  background: url("../images/footer-bg.svg");
+  margin: 0;
+  padding: 5% 5%;
+}
+.registerblue {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.registerblue > * {
+  width: 50%;
+}
+.registerblue h1 {
+  font-size: 58px;
+  color: #fff;
+}
+.registerblue p {
+  font-size: 22px;
+  color: #fff;
+  padding-top: 5%;
+}
+.registerblue button {
+  margin: 20px 0;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  font-size: 20px;
+  background: transparent;
+  align-items: center;
+  float: right;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #81889d;
+  padding: 5% 0;
+}
+footer > * {
+  width: 15%;
+}
+footer .logo {
+  width: 35%;
+}
+footer h4 {
+  color: #1d2b4f;
+  font-size: 28px;
+}
+footer p {
+  font-size: 18px;
+  padding: 25px 38px 0px 0px;
+}
+footer ul li {
+  font-size: 18px;
+  padding-top: 20px;
+  list-style-type: none;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

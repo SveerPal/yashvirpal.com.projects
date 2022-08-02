@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  background-color: #111111;
+  color: #e9e9e9;
+}
+.section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 30px;
+}
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #e9e9e9;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0px 30px;
+}
+.carrot::after {
+  content: "\25BE";
+  font-size: 20px;
+  padding-left: 5px;
+}
+.bannercontainer {
+  display: grid;
+  /* grid-template-columns: auto auto; */
+  grid-template-columns: 1fr 2fr;
+  padding: 0px 30px;
+
+  align-items: center;
+}
+.banner {
+  /* width: 50%; */
+}
+.b-text h5 {
+  font-size: 30px;
+  color: #ff3343;
+}
+.b-text h1 {
+  font-size: 80px;
+  margin: 15px 0px;
+}
+.b-text p {
+  font-size: 25px;
+}
+.b-text button {
+  background-color: #c91b28;
+  color: #fefdfd;
+  padding: 15px 25px;
+  font-size: 22px;
+  margin: 35px 0px;
+  border: none;
+}
+/************* Experiance Section ********/
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  margin: 5% 10%;
+}
+.services .service {
+  background-color: #1e1e1e;
+  padding: 35px;
+  width: 20%;
+}
+.services .service:nth-child(2) {
+  background-color: #c91b28;
+  padding: 35px;
+}
+.service h1 {
+  font-size: 40px;
+  padding: 20px 0px;
+  color: #ffffff;
+}
+.service p {
+  font-size: 25px;
+}
+.service p:nth-last-child(2) {
+  padding-bottom: 25px;
+}
+.service label {
+  font-size: 20px;
+  color: #ff3343;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.service label::after {
+  content: "\2794";
+  margin-left: 5px;
+}
+.service:nth-child(2) label {
+  color: #fff;
+}
+.experince {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 14.5%;
+  grid-gap: 25px;
+  text-align: center;
+}
+.experince .expr {
+  background: #1e1e1e;
+  padding: 50px;
+}
+.expr p {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.expr p:first-child {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ef4040;
+  font-family: sans-serif;
+}
+.yearexperince {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: unset !important;
+  background: transparent !important;
+  padding: 25% !important;
+}
+.yearexperince p:first-child {
+  font-size: 100px !important;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.half {
+  position: relative;
+}
+span.leftbg {
+  background-color: #181818;
+  position: absolute;
+  top: -98px;
+  width: 50%;
+  z-index: -1;
+  height: 111.5%;
+}
+.service img {
+  width: 100px;
+}
+/************* Project Heading Section ********/
+.fetureproject .container {
+  margin: 50px 14%;
+}
+
+.fetureproject .container .projects {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 20px 0;
+}
+.fetureproject .container .projects h2 {
+  font-size: 34px;
+  color: #fff;
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+}
+.fetureproject .container .projects p {
+  font-size: 20px;
+  padding: 10px 0;
+}
+.fetureproject .container .projects .viewbutton button {
+  color: #fef0f0;
+  padding: 15px 35px;
+  margin: 35px 0px;
+  background-color: #ff3343;
+  font-size: 20px;
+  border: none;
+}
+
+.fetureproject .container .projects .viewbutton {
+  display: flex;
+  justify-content: flex-end;
+}
+/************* Project Section ********/
+.projectlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projectlist > div {
+  /* margin: 5px; */
+}
+.projectlist .project {
+  margin: 20px 20px;
+  flex: 1 0 47%;
+}
+.project .projectimg {
+  padding: 100px 20px;
+  background-color: #1e1e1e;
+}
+.projectlist img {
+  width: 100%;
+  height: 400px;
+}
+.projectdescription p {
+  font-size: 22px;
+  padding: 20px 0;
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+  text-transform: capitalize;
+}
+.projectdescription a {
+  color: #ef4040;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.projectdescription a::after {
+  content: "\2794";
+  margin-left: 5px;
+}
+.project1,
+.project3 {
+  margin-left: 0px;
+}
+.project1,
+.project3 {
+  margin-left: 0px !important;
+}
+.project4,
+.project2 {
+  margin-right: 0px !important;
+}
+/************* Work Togather Section *****/
+.worktogether {
+  margin: 0 14.5%;
+}
+.worktogether .container {
+  background-color: #1e1e1e;
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.worktogether h1 {
+  font-size: 70px;
+  color: #fff;
+  padding: 20px 0;
+}
+.worktogether p {
+  font-size: 20px;
+}
+.worktogether .wtbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.worktogether .wtbutton button {
+  background-color: #ef4040;
+  color: #fef0f0;
+  padding: 15px 35px;
+  font-size: 20px;
+  margin: 35px 0px;
+  border: none;
+}
+/************* Footer Section ***********/
+.fmenuu {
+  text-align: center;
+  padding: 50px 0;
+}
+.fmenuu li {
+  text-align: center;
+  display: inline-block;
+  padding: 0px 20px;
+}
+.footer {
+  background-color: #1e1e1e;
+}
+.footer .container {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; */
+  /* display: grid;
+  grid-template-columns: auto auto; */
+  /* padding: 10px 30px; */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 30px; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  align-items: center;
+  padding: 11px 14.5%;
+}
+.footer .container ul li {
+  display: inline;
+  color: #fff;
+  list-style-type: none;
+  padding: 0px 30px;
+  /*  */
+}
+.socialicon {
+  padding-left: 100px;
+}

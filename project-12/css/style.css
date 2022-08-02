@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+body {
+  background-color: #fdfeff;
+}
+section,
+header,
+footer {
+  margin: 0 5%;
+}
+header { 
+  padding: 50px 5%;
+  background-color: #636c79;
+  margin: 0 0;
+}
+header .nav,header .banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header ul li {
+  display: inline-block;
+  color: #ebedee;
+  font-size: 20px;
+  padding: 0 25px;
+}
+header ul li a {
+  border: 1px solid #ebedee;
+  color: #ebedee;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+li.talk {
+  margin-left: 81px;
+}
+/********* Banner Section ********/
+
+header .banner > div {
+  width: 50%;
+  padding: 100px 30px;
+}
+header .banner h1 {
+  font-size: 86px;
+  color: #fff;
+}
+header .banner p {
+  font-size: 28px;
+  padding: 25px 0;
+  color: #d8dadd;
+}
+header .banner button {
+  background: #8bb7a2;
+  color: #fff;
+  padding: 15px 60px;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  top: 18px;
+  right: -76px;
+}
+ header .banner img {
+  width: 90%;
+  border-radius: 10px;
+  height: 100%;
+} 
+.banner .newsletter img{
+width: 40px;
+height: auto;
+border-radius: unset;
+position: absolute;
+    top: 22px;
+    left: 25px;
+
+}
+.newsletter{
+  position: relative;
+}
+.banner .newsletter input{
+  width: 100%;
+  height: 80px;
+  padding-left: 100px;
+  font-size: 20px;
+}
+
+/********* Connect Your Business ********/
+.connectbusiness{
+  padding: 100px 0;
+  text-align: center;
+}
+.connectbusiness h1{
+  font-size: 66px;
+    padding: 0px 25%;
+}
+.projectcount{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.project h3{
+  font-size: 45px;
+  padding-top: 50px;
+}
+.project p{
+  font-size: 25px;
+}
+.connectbusiness img{
+  width: 100%;
+  margin-top: 75px;
+}
+
+/********* Made Easy *******/
+section.madeeasyheading{
+  text-align: center;
+  padding: 0px 31%;
+  font-size: 41px;
+}
+
+section.madeeasy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+   align-items: center; 
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+section.madeeasy > div {
+  width: 50%;
+}
+section.madeeasy h1 {
+  font-size: 60px;
+  color: #1b1d21;
+}
+section.madeeasy p {
+  font-size: 22px;
+  padding: 25px 25px 25px 0px;
+  color: #535558;
+}
+section.madeeasy button {
+  background: #8bb7a2;
+  color: #fff;
+  padding: 15px 60px;
+  border: none;
+  font-size: 20px;
+}
+section.madeeasy img {
+   width: 90%; 
+}
+/******** Team Heading ***/
+.teamsection .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.teamsection .heading > div {
+  width: 50%;
+}
+.teamsection .heading h2 {
+  font-size: 60px;
+  color: #1b1d21;
+  padding-right: 50%;
+}
+.teamsection .heading p {
+  font-size: 28px;
+  padding: 25px 0;
+  color: #535558;
+}
+/******** Team List ***/
+.teamsection .teamlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.teamsection .teamlist > div {
+  width: 30%;
+}
+.teamsection .teamlist h2 {
+  font-size: 30px;
+  color: #1b1d21;
+  padding-top: 30px;
+}
+.teamsection .teamlist p {
+  color: #535558;
+  text-align: justify;
+  padding: 30px 0;
+  font-size: 18px;
+}
+.teamsection .teamlist img {
+  width: 100%;
+}
+.teamsection button {
+  background: #8bb7a2;
+  color: #fff;
+  padding: 15px 58px;
+  border: none;
+  font-size: 20px;
+  margin: 0 44%;
+  margin-bottom: 50px;
+}
+/********** Footer **********/
+footer {  
+  color: #81889d;  
+  margin: 0 0;
+  background-color: #10181d;
+}
+.logo_social{
+  padding: 5% 0%;
+  margin: 0% 5%;
+  border-bottom: 1px solid;
+}
+footer .logo_social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .menus{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0% 5%;
+  padding: 5% 0;
+}
+
+
+footer .menus h4 {
+  color: #fff;
+  font-size: 22px;
+  padding: 70px 0px 30px 0px;
+}
+footer .menus li {
+  color: #808487;
+  font-size: 17px;
+  list-style-type: none;
+  padding: 8px 0;
+}
+
+

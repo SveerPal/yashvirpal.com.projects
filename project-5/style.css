@@ -1,0 +1,88 @@
+body {
+  height: 100%;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+}
+/******* Start Nav Section *********/
+section:first-child {
+  background-color: #000;
+  color: #fff;
+}
+.navbar {
+  background-color: #000;
+  color: #fff;
+  margin: 0% 5% 0% 5%;
+}
+.navbar div {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.navbar div.line {
+  border-left: 1px solid #fff;
+  height: 50px;
+  vertical-align: text-bottom;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.navbar div.grow-list {
+  width: 70%;
+  vertical-align: text-bottom;
+}
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 30px 5px 30px;
+  font-size: 20px;
+  position: relative;
+}
+.list-item:first-child::after {
+  content: "\02EC";
+  position: absolute;
+  top: -25px;
+  right: -20px;
+  font-size: 36px;
+}
+.button-small {
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  background-color: #ba0cc5;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  float: right;
+}
+/******* End Nav Section *********/
+/******* Start hero Section *********/
+section:last-child {
+  background-image: url("./assets/bg.png");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero {
+  padding: 10% 30% 40% 30%;
+  text-align: center;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 80px;
+}
+.hero .hero-description {
+  font-size: 30px;
+}
+.hero .button-large {
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  background-color: #ba0cc5;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+/******* End Hero Section *********/

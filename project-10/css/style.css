@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+nav.nav-bar {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  margin: 50px 15%;
+}
+.line {
+  border-bottom: 2px solid #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo h1 {
+  font-size: 45px;
+}
+ul.item-lists li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 25px;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+ul.item-lists li:first-child {
+  padding-left: 0px;
+}
+.main-section {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 140px 15% 0px 15%;
+  align-items: center;
+}
+h1 {
+  font-size: 90px;
+  text-transform: capitalize;
+}
+button {
+  text-transform: uppercase;
+  border: 5px solid #fff;
+  padding: 20px 50px;
+  border-radius: 40px;
+  font-size: 25px;
+  background: transparent;
+  color: #fff;
+  margin: 100px 0;
+}
+.call-detail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.call-detail a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 30px;
+}
+.call-detail img {
+  margin-right: 6px;
+}
+
+.right-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  background-color: #314a5b;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  width: 250px;
+  margin: 0px;
+}
+.card:first-child {
+  position: absolute;
+  top: -250px;
+}
+.card:last-child {
+  position: absolute;
+  left: -239px;
+  bottom: -350px;
+}
+.card:first-child::after {
+  content: url("../images/line.png");
+  position: absolute;
+  bottom: -82px;
+  right: 20%;
+}
+.card:last-child::after {
+  content: url("../images/line.png");
+  position: absolute;
+  right: -60px;
+  top: 40px;
+  transform: rotate(270deg);
+}
+.card img {
+  background-color: #fff;
+  padding: 11px 50px;
+  border-radius: 50pc;
+  height: 35px;
+  margin: 0 0 10px 0;
+}
+.card p {
+  font-size: 25px;
+}
