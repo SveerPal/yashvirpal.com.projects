@@ -1,0 +1,698 @@
+
+@media  screen and (max-width: 568px) and (min-width: 320px){
+    nav{
+        justify-content: space-between;
+        margin: 10px 5%;
+    }
+    .nav-items{
+        display: none;
+    }
+    .action{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    
+    } 
+    .brand img{
+        width: 100px;
+    }
+    .action img{
+        width: 200px;
+    }
+    
+    .intro-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 5%;
+        height: unset;
+        padding: 5% 0;
+    }
+    .headphone-div {
+         position: relative; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .right-section {
+        width: unset;
+        position: relative;
+
+    }
+    .right-section img[alt="headphone"] {
+        position: unset;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+    }
+    img.discount {
+        position: absolute;
+        top: 65%;
+        right: 0;
+        left: 5%;
+        width: 26%;
+    }
+    .discount-content {
+        position: absolute;
+        top: 72%;
+        right: 0;
+        left: 10%;
+        color: #fff;
+    }
+
+    .left-section {
+        width: unset;
+        padding-top: 30%;
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .left-section h3 {
+        font-size: 20px;
+    }
+
+    .left-section h1 {
+        font-size: 25px;
+    }
+    .left-section .sub-headline {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .left-section .sub-headline::before {        
+        width: 13px;
+        height: 14px;        
+        border-radius: 50%;
+        padding: 2px;
+        margin-left: 20px;
+    }
+    .left-section .sub-headline img {
+        display: none;
+    }
+    .left-section p {
+        font-size: 14px;       
+        margin: 20px 0;
+        text-align: center;
+    }
+    .left-section img[alt=circles]{
+        width: 40px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+  
+    .right-section .action-btn {
+        position: absolute;
+        top: 110%;
+        right: 40%;
+        margin-bottom: 100px;
+
+    }
+    .discount-content h1 {
+        font-size: 25px;
+        font-weight: 100;
+        font-family: "Fredoka One", cursive;
+    }
+    .dots {
+        position: absolute;
+        top: 100%;
+        right: 40%;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+@media screen and (min-width: 569px) and (max-width: 768px) {
+    nav{
+        justify-content: space-between;
+        margin: 10px 5%;
+    }
+    .brand{
+        width: 25%;
+    }
+    .nav-items h5 {
+        padding: 5px 4px;
+        font-size: 18px;
+    }
+    .action{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    
+    } 
+    .brand img{
+        width: 100px;
+    }
+    .action img{
+        width: 210px;
+        z-index: -1;
+    }
+    
+    .intro-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 5%;
+        height: unset;
+        padding: 5% 0;
+    }
+    .headphone-div {
+         position: relative; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .right-section {
+        width: unset;
+        position: relative;
+
+    }
+    .right-section img[alt="headphone"] {
+        position: unset;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+    }
+    img.discount {
+        position: absolute;
+        top: 65%;
+        right: 0;
+        left: 4%;
+        width: 26%;
+    }
+    .discount-content {
+        position: absolute;
+        top: 73%;
+        right: 0;
+        left: 12%;
+        color: #fff;
+    }
+
+    .left-section {
+        width: unset;
+        padding-top: 25%;
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .left-section h3 {
+        font-size: 25px;
+    }
+
+    .left-section h1 {
+        font-size: 30px;
+    }
+    .left-section .sub-headline {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .left-section .sub-headline::before {        
+        width: 18px;
+        height: 19px;        
+        border-radius: 50%;
+        padding: 2px;
+        margin-left: 20px;
+    }
+    .left-section .sub-headline img {
+        display: none;
+    }
+    .left-section p {
+        font-size: 18px;       
+        margin: 20px 0;
+        text-align: center;
+    }
+    .left-section img[alt=circles]{
+        width: 55px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 19px;
+    }
+  
+    .right-section .action-btn {
+        position: absolute;
+        top: 110%;
+        right: 40%;
+        margin-bottom: 100px;
+
+    }
+    .discount-content h1 {
+        font-size: 30px;
+        font-weight: 100;
+        font-family: "Fredoka One", cursive;
+    }
+    .dots {
+        position: absolute;
+        top: 100%;
+        right: 40%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media  screen and (min-width: 769px) and (max-width: 992px){ 
+    nav{
+        justify-content: space-between;
+        margin: 10px 2%;
+    }
+    .brand{
+        width: 25%;
+    }
+    .nav-items h5 {
+        padding: 5px 8px;
+        font-size: 25px;
+    }
+    .nav-item.active-item {
+       padding-left: 0;
+    }
+    .nav-items h5:last-child {
+        padding-right: 10px;
+    }
+    .action{
+        width: 30%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+    
+    } 
+    .brand img{
+        width: 85%;
+    }
+    .action img{
+        width: 130%;
+        z-index: -1;
+    }
+    
+    .intro-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 2%;
+        height: unset;
+        padding: 5% 0;
+    }
+    
+     .right-section {
+        width: 50%;
+        position: relative;
+
+    }
+    .right-section img[alt="headphone"] {
+        position: unset;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        margin-top: -25%;
+    }
+    img.discount {
+        position: absolute;
+        top: 58%;
+        right: 0;
+        left: 7%;
+        width: 26%;
+    }
+    .discount-content {
+        position: absolute;
+        top: 67%;
+        right: 0;
+        left: 14%;
+        color: #fff;
+    }
+
+    .left-section {
+        width: 50%;
+        padding-top: 0;
+        display: flex;
+       flex-direction: column;
+       
+    }
+    .headphone-div {
+        position: relative; 
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+   }
+    .left-section h3 {
+        font-size: 37px;
+    }
+
+    .left-section h1 {
+        font-size: 35px;
+    }
+    .left-section .sub-headline {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .left-section .sub-headline::before {        
+        width: 23px;
+        height: 24px;        
+        border-radius: 50%;
+        padding: 2px;
+        margin-left: 20px;
+    }
+    .left-section .sub-headline img {
+        display: none;
+    }
+    .left-section p {
+        font-size: 19px;       
+        margin: 20px 0;
+        
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 22px;
+    }
+  
+    .right-section .action-btn {
+        position: absolute;
+        top: 110%;
+        right: 32%;
+
+    }
+    .discount-content h1 {
+        font-size: 30px;
+        font-weight: 100;
+        font-family: "Fredoka One", cursive;
+    }
+    .dots {
+        position: absolute;
+        top: 100%;
+        right: 35%;
+        display: flex;
+        flex-direction: row;
+    } 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media  screen and (min-width: 993px) and (max-width: 1200px){ 
+    nav{
+        justify-content: space-between;
+        margin: 10px 2%;
+    }
+    
+    .nav-items h5 {
+        padding: 5px 14px;
+        font-size: 30px;
+    }
+    
+    
+    .intro-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 2%;
+        height: unset;
+        padding: 5% 0;
+    }
+    
+     .right-section {
+        width: 40%;
+        position: relative;
+
+    }
+    .right-section img[alt="headphone"] {
+        position: unset;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        margin-top: -25%;
+    }
+    img.discount {
+        position: absolute;
+        top: 58%;
+        right: 0;
+        left: 7%;
+        width: 26%;
+    }
+    .discount-content {
+        position: absolute;
+        top: 67%;
+        right: 0;
+        left: 14%;
+        color: #fff;
+    }
+
+    .left-section {
+        width: 60%;
+        padding-top: 0;
+        display: flex;
+       flex-direction: column;
+       
+    }
+    .headphone-div {
+        position: relative; 
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+   }
+    .left-section h3 {
+        font-size: 40px;
+    }
+
+    .left-section h1 {
+        font-size: 58px;
+    }
+    .left-section .sub-headline img {
+        display: none;
+    }
+    .left-section p {
+        font-size: 20px;       
+        margin: 20px 0;
+        
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 24px;
+    }
+  
+    .right-section .action-btn {
+        position: absolute;
+        top: 110%;
+        right: 32%;
+
+    }
+    .discount-content h1 {
+        font-size: 30px;
+        font-weight: 100;
+        font-family: "Fredoka One", cursive;
+    }
+    .dots {
+        position: absolute;
+        top: 100%;
+        right: 35%;
+        display: flex;
+        flex-direction: row;
+    } 
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media  screen and (min-width: 1201px) and (max-width: 1400px){ 
+    nav{
+        justify-content: space-between;
+        margin: 10px 2%;
+    }
+    .intro-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 2%;
+        height: unset;
+        padding: 5% 0;
+    }
+    
+     .right-section {
+        width: 43%;
+        position: relative;
+
+    }
+    .right-section img[alt="headphone"] {
+        position: unset;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        margin-top: -25%;
+    }
+    img.discount {
+        position: absolute;
+        top: 58%;
+        right: 0;
+        left: 7%;
+        width: 26%;
+    }
+    .discount-content {
+        position: absolute;
+        top: 67%;
+        right: 0;
+        left: 14%;
+        color: #fff;
+    }
+
+    .left-section {
+        width: 57%;
+        padding-top: 0;
+        display: flex;
+       flex-direction: column;
+       
+    }
+    .headphone-div {
+        position: relative; 
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+    .left-section .sub-headline img {
+        display: none;
+    }
+    .left-section h1 {
+        font-size: 67px;  
+        
+    }
+    .left-section p {
+        font-size: 22px;       
+        margin: 20px 0;
+        
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 23px;
+    }
+  
+    .right-section .action-btn {
+        position: absolute;
+        top: 110%;
+        right: 32%;
+
+    }
+    .discount-content h1 {
+        font-size: 30px;
+        font-weight: 100;
+        font-family: "Fredoka One", cursive;
+    }
+    .dots {
+        position: absolute;
+        top: 100%;
+        right: 35%;
+        display: flex;
+        flex-direction: row;
+    } 
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { 
+    nav{
+        justify-content: space-between;
+        margin: 10px 2%;
+    }
+    .intro-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 2%;
+        height: unset;
+        padding: 5% 0;
+    }
+    
+     .right-section {
+        width: 43%;
+        position: relative;
+
+    }
+    .right-section img[alt="headphone"] {
+        position: unset;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        margin-top: 0;
+    }
+    img.discount {
+        position: absolute;
+        top: 58%;
+        right: 0;
+        left: 7%;
+        width: 26%;
+    }
+    .discount-content {
+        position: absolute;
+        top: 67%;
+        right: 0;
+        left: 14%;
+        color: #fff;
+    }
+
+    .left-section {
+        width: 57%;
+        padding-top: 0;
+        display: flex;
+       flex-direction: column;
+       
+    }
+    .headphone-div {
+        position: relative; 
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+    .left-section .sub-headline img {
+        display: none;
+    }
+    .left-section h1 {
+        font-size: 78px;  
+        
+    }
+    .left-section p {
+        font-size: 22px;       
+        margin: 20px 0;
+        
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 23px;
+    }
+  
+    .right-section .action-btn {
+        position: absolute;
+        top: 110%;
+        right: 32%;
+
+    }
+    
+    .dots {
+        position: absolute;
+        top: 100%;
+        right: 35%;
+        display: flex;
+        flex-direction: row;
+    } 
+ }

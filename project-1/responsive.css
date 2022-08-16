@@ -1,0 +1,118 @@
+
+@media  screen and (max-width: 576px) {
+    .navbar-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 30px 0;
+    }
+    .headermenu{
+        display: none;
+    }
+    
+    p.hero-description {
+     padding: 0;
+    }
+    .hero-container-right {
+        float: none;
+         width: 100%; 
+        text-align: center;
+    }
+    span.square {
+        position: absolute;
+        top: 18%;
+        right: 0;
+        bottom: 0;
+        left: unset;
+        z-index: -1;
+    }
+    span.globe {
+         top: 0;
+        position: absolute;
+        left: 35%;
+    }
+    .globe + div {
+        float: none; 
+    }
+    span.square::after {
+        
+        top: 34%;
+        right: 0; 
+        
+    }
+    img[alt=person-hero-iamge]{
+        width: -webkit-fill-available;   
+        margin-top: 10px; 
+    }
+    .hero-container-right h1 {
+        margin-top: 100px;
+    }
+}
+@media screen and (min-width: 600px) {...}
+
+@media  screen and (min-width: 768px) { 
+    .navbar-container{
+        padding: 15px 5%;
+    }
+    .navbar-container ul li:first-child {
+        font-weight: 900;
+        font-size: 22px;
+    }
+    .navbar-container ul li{
+        font-size: 18px;
+        padding: 2px 10px 2px 10px;
+    }
+    .nav-button {
+        border: 1px solid #000;
+        
+        padding: 5px 25px;
+        background: #fff;
+        font-size: 24px;
+    }
+    .search-icon svg {
+        height: 28px;
+        padding-right: 8px;
+    }
+
+    span.square {
+       
+        top: 25%;
+        right: 60px;
+        left: unset;
+        z-index: -1;
+    }
+
+    span.square::after {
+        
+        top: 75%;
+        right: 0; 
+        
+    }
+    span.globe {
+         top: 0; 
+        position: absolute;
+        left: 35%;
+    }
+    .hero-container-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    p.hero-description {
+        padding: 0;
+    }
+    .globe + div {
+        float: none;
+    }
+    span.star {
+        float: none;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }

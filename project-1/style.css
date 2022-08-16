@@ -1,114 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Square+Peg&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Orbitron';
+}
+section{
+    margin:0 5%
+}
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+}
 
-body {
-    margin: 0px;
-  }
-  /********* Start nav */
-  .navbar-container {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 30px;
-  }
-  
-  .list li {
-    padding: 5px 20px 5px 20px;
-    font-size: 22px;
-    display: inline-block;
+.navbar-container ul li{
     list-style-type: none;
-  }
-  .search-icon svg {
-    height: 33px;
-    padding-right: 14px;
-  }
-  .nav-button {
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 5px 45px 5px 45px;
-    background: #fff;
-    font-size: 24px;
-  }
-  .button-group {
-    display: flex;
-    padding-top: 20px;
-  }
-  /********* end nav */
-  /********* Start container */
-  section[aria-label="banner"] {
+    display: inline-block;
+    font-size: 22px;
+    padding: 0 22px;
+    font-weight: 600;
     position: relative;
-  }
-  .hero-container {
-    padding: 5% 8% 5% 8%;
-    /* position: relative;
-    display: flex; */
-  }
-  .hero-container:first div {
-    display: inline-block;
-    /* position: absolute; */
-  }
-  .globe + div {
-    float: left;
-  }
-  .hero-container-right {
-    float: right;
-    width: 65%;
-    text-align: center;
-  }
-  
-  span.square {
-    position: absolute;
-    left: 19.1%;
-    top: 225%;
-    z-index: -1;
-  }
-  span.square::after {
-    position: absolute;
-    top: 75%;
-    right: -151px;
-    background-image: url("/assets/start.png");
-    background-size: cover;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
+}
+.navbar-container ul li:first-child{
+    font-weight: 900;
+    font-size: 28px;    
+}
+.navbar-container ul li:first-child::before{
+   
     content: "";
-  }
-  span.star {
-    float: right;
-  }
-  span.globe {
-    top: 25%;
     position: absolute;
-    left: 50%;
-  }
-  .hero-container-right h1 {
-    font-size: 4.8rem;
-    font-family: 'Orbitron', sans-serif;  
-  }
-  .hero-description + div {
-    margin: 10%;
-  }
-  p.hero-description {
-    padding: 0px 225px 0px 230px;
-    line-height: 25px;
-    font-size: 20px;
-  }
-  .button-email {
-    border-radius: 10px;
-    padding: 0px 20px 0px 20px;
-    background-color: #fff;
-    font-size: 22px;
-  }
-  .button-join {
-    background-color: #000;
-    color: #fff;
-    border-radius: 10px;
-    margin-left: 5px;
-    font-size: 22px;
-  }
-  .contact-heading {
-    font-size: 22px;
-    font-weight: 100;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-  }
-  /********* End container */
-  
+    width: 47%;
+    height: 1px;
+    bottom: -3px;
+    left: 30%;
+    border-bottom: 4px solid;
+}
+.button-group{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.button-group .nav-button{
+    padding: 10px 20px;
+    
+}
