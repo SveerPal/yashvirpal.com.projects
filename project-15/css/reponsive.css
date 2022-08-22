@@ -1,160 +1,26 @@
-
-@media  screen and (max-width: 576px) {
-    nav{
-        justify-content: space-between;
-        margin: 10px 5%;
-    }
-    .nav-items{
-        display: none;
-    }
+@media  screen and (max-width: 568px){
     
-    /* nav img{
-        width: 50%;
-    }
-    nav img:last-child{
-        width: 50%;
-    } */
-    .intro-section{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0 5%;
-        height: unset;
-    }
-    .headphone-div {
-         position: unset; 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .right-section {
-        width: unset;
-    }
-    .right-section img[alt="headphone"] {
-        right: 0;
-        left: 0;
-        z-index: -1;
-        width: 65%;
-    }
-    img.discount {
-        position: absolute;
-        top: 292px;
-        right: 0;
-        left: 0%;
-        width: 26%;
-    }
-    .discount-content {
-        position: absolute;
-        top: 333px;
-        right: 0;
-        left: 0;
-        color: #fff;
-    }
-
-    .left-section {
-        width: unset;
-        padding-top: 0;
-    }
-    .left-section h3 {
-        font-size: 20px;
-    }
-
-    .left-section h1 {
-        font-size: 25px;
-    }
-    .left-section .sub-headline {
-        font-size: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .left-section .sub-headline::before {        
-        width: 10px;
-        height: 11px;        
-        border-radius: 50%;
-        padding: 2px;
-        margin-left: 20px;
-    }
-    .left-section .sub-headline img {
-        display: none;
-    }
-    .left-section p {
-        font-size: 12px;       
-        margin: 20px 0;
-    }
-    button {
-        padding: 10px 20px;
-        font-size: 15px;
-    }
 
 }
-@media screen and (min-width: 600px) {}
+@media screen and (min-width: 569px) and (max-width: 768px) {
+   
+}
 
-@media  screen and (min-width: 768px) { 
-    .navbar-container{
-        padding: 15px 5%;
-    }
-    .navbar-container ul li:first-child {
-        font-weight: 900;
-        font-size: 22px;
-    }
-    .navbar-container ul li{
-        font-size: 18px;
-        padding: 2px 10px 2px 10px;
-    }
-    .nav-button {
-        border: 1px solid #000;
-        
-        padding: 5px 25px;
-        background: #fff;
-        font-size: 24px;
-    }
-    .search-icon svg {
-        height: 28px;
-        padding-right: 8px;
-    }
-
-    span.square {
-       
-        top: 25%;
-        right: 60px;
-        left: unset;
-        z-index: -1;
-    }
-
-    span.square::after {
-        
-        top: 75%;
-        right: 0; 
-        
-    }
-    span.globe {
-         top: 0; 
-        position: absolute;
-        left: 35%;
-    }
-    .hero-container-right {
-        float: none;
-        width: 100%;
-        text-align: center;
-    }
-    p.hero-description {
-        padding: 0;
-    }
-    .globe + div {
-        float: none;
-    }
-    span.star {
-        float: none;
-    }
+@media  screen and (min-width: 769px) and (max-width: 992px){ 
+   
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media  screen and (min-width: 993px) and (max-width: 1200px){ 
+   
+}
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { }
+@media  screen and (min-width: 1201px) and (max-width: 1400px){ 
+   
+}
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) { 
+   
+ }
