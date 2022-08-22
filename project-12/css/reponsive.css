@@ -1,160 +1,745 @@
-
-@media  screen and (max-width: 576px) {
-    nav{
-        justify-content: space-between;
-        margin: 10px 5%;
-    }
-    .nav-items{
-        display: none;
-    }
+@media  screen and (max-width: 568px){
     
-    /* nav img{
-        width: 50%;
+    nav ul li{
+       display: none;
     }
-    nav img:last-child{
-        width: 50%;
-    } */
-    .intro-section{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0 5%;
-        height: unset;
+    li.talk {
+        display: block;
+        margin-left: 81px;
     }
-    .headphone-div {
-         position: unset; 
+    header .banner {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
     }
-    .right-section {
-        width: unset;
+    header .banner > div {
+        width: 100%; 
+        padding: 50px 15px;
     }
-    .right-section img[alt="headphone"] {
-        right: 0;
-        left: 0;
-        z-index: -1;
-        width: 65%;
+    header .banner img {
+        width: 100%;
     }
-    img.discount {
-        position: absolute;
-        top: 292px;
-        right: 0;
-        left: 0%;
-        width: 26%;
+    header .banner h1 {
+        font-size: 45px;
     }
-    .discount-content {
-        position: absolute;
-        top: 333px;
-        right: 0;
-        left: 0;
-        color: #fff;
+    header .banner p {
+        font-size: 22px;
+        padding: 15px 0;
     }
-
-    .left-section {
-        width: unset;
-        padding-top: 0;
+    .banner .newsletter input {
+        width: 90%;
+        height: 60px;
+        padding-left: 45px;
+        font-size: 18px;
     }
-    .left-section h3 {
+    .banner .newsletter img {
+        width: 20px;
+        top: 50%px;
+        left: 15px;
+    }
+    header .banner button {
+        
+        padding: 15px 15px;
         font-size: 20px;
+        top: 6px;
+        right: -5px;
     }
 
-    .left-section h1 {
-        font-size: 25px;
-    }
-    .left-section .sub-headline {
-        font-size: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .left-section .sub-headline::before {        
-        width: 10px;
-        height: 11px;        
-        border-radius: 50%;
-        padding: 2px;
-        margin-left: 20px;
-    }
-    .left-section .sub-headline img {
-        display: none;
-    }
-    .left-section p {
-        font-size: 12px;       
-        margin: 20px 0;
-    }
-    button {
-        padding: 10px 20px;
-        font-size: 15px;
-    }
 
-}
-@media screen and (min-width: 600px) {}
-
-@media  screen and (min-width: 768px) { 
-    .navbar-container{
-        padding: 15px 5%;
+    .connectbusiness h1 {
+        font-size: 45px;
+        text-align: center;
+        padding: 0 5%;
     }
-    .navbar-container ul li:first-child {
-        font-weight: 900;
+    .projectcount {
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .project h3 {
+        font-size: 35px;
+        padding-top: 30px;
+    }
+    .project p {
         font-size: 22px;
     }
-    .navbar-container ul li{
-        font-size: 18px;
-        padding: 2px 10px 2px 10px;
+    .connectbusiness img {
+        margin-top: 60px;
     }
-    .nav-button {
-        border: 1px solid #000;
-        
-        padding: 5px 25px;
-        background: #fff;
-        font-size: 24px;
+    section.madeeasyheading {
+        padding: 0px 5%;
+        font-size: 35px;
     }
-    .search-icon svg {
-        height: 28px;
-        padding-right: 8px;
-    }
-
-    span.square {
-       
-        top: 25%;
-        right: 60px;
-        left: unset;
-        z-index: -1;
-    }
-
-    span.square::after {
-        
-        top: 75%;
-        right: 0; 
+    section.madeeasy {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        text-align: justify;
+        justify-content: center;
         
     }
-    span.globe {
-         top: 0; 
-        position: absolute;
-        left: 35%;
-    }
-    .hero-container-right {
-        float: none;
+    section.madeeasy > div {
         width: 100%;
+    }
+    section.madeeasy h1 {
+        font-size: 40px;
+    }
+    section.madeeasy p {
+        font-size: 20px;
+        padding: 20px 0px;
+        color: #535558;
+    }
+    section.madeeasy button {
+        padding: 15px 30px;
+        border: none;
+        font-size: 20px;
+        margin: 5% 30%;
+    }
+    section.madeeasy img {
+         width: 100%; 
+    }
+     
+    .teamsection .heading {    
+       flex-direction: column;
+       justify-content: center;
+       flex-wrap: wrap;
+       padding: 50px 0;
+       align-items: center;
+       text-align: justify;
+    }
+    .teamsection .heading > div {
+        width: 100%;
+    }
+    .teamsection .heading h2 {
+        font-size: 40px;
+        padding-right: 0%;
         text-align: center;
     }
-    p.hero-description {
-        padding: 0;
+    .teamsection .heading p {
+        font-size: 20px;
     }
-    .globe + div {
-        float: none;
+    .teamsection .teamlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px 0;
     }
-    span.star {
-        float: none;
+    .teamsection .teamlist > div {
+        width: 100%;
     }
+    .teamsection .teamlist h2 {
+        font-size: 25px;       
+        padding-top: 20px;
+    }
+    .teamsection .teamlist p {
+        text-align: justify;
+        padding: 15px 0;
+        font-size: 20px;
+    }
+    .teamsection button {
+        padding: 10px 25px;
+        font-size: 20px;
+        margin: 0 30%;
+        margin-bottom: 25px;
+    }
+    footer .logo_social {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social{
+        margin-top: 30px;
+    }
+    footer .menus {
+        justify-content: flex-start;        
+        flex-wrap: wrap;
+        margin: 0% 5%;
+        padding: 5% 0;
+    }
+    footer .menus .menu {
+       width: 50%;
+    }
+}
+@media screen and (min-width: 569px) and (max-width: 768px) {
+     
+    .nav .logo  {
+        width: 20%;
+    } 
+    .nav .logo img  {
+        width: 100%;
+    } 
+    header ul li {
+        display: inline-block;
+        color: #ebedee;
+        font-size: 16px;
+        padding: 0 1px;
+    }
+    header ul li a {
+        padding: 5px 10px;
+    } 
+    li.talk {
+         margin-left: 5px; 
+    }
+     header .banner {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+     }
+     header .banner > div {
+         width: 100%; 
+         padding: 50px 15px;
+     }
+     header .banner img {
+         width: 100%;
+     }
+     header .banner h1 {
+         font-size: 45px;
+     }
+     header .banner p {
+         font-size: 22px;
+         padding: 15px 0;
+     }
+     .banner .newsletter input {
+         width: 92%;
+         height: 60px;
+         padding-left: 45px;
+         font-size: 18px;
+     }
+     .banner .newsletter img {
+         width: 20px;
+         top: 50%px;
+         left: 15px;
+     }
+     header .banner button {
+         
+         padding: 15px 15px;
+         font-size: 20px;
+         top: 6px;
+         right: -1%;
+     }
+ 
+ 
+     .connectbusiness h1 {
+         font-size: 45px;
+         text-align: center;
+         padding: 0 5%;
+     }
+     .projectcount {
+         flex-direction: column;
+         justify-content: space-evenly;
+         flex-wrap: wrap;
+     }
+     .project h3 {
+         font-size: 35px;
+         padding-top: 30px;
+     }
+     .project p {
+         font-size: 22px;
+     }
+     .connectbusiness img {
+         margin-top: 60px;
+     }
+     section.madeeasyheading {
+         padding: 0px 5%;
+         font-size: 35px;
+     }
+     section.madeeasy {
+         flex-direction: column-reverse;
+         flex-wrap: wrap;
+         align-items: center;
+         margin-top: 50px;
+         margin-bottom: 25px;
+         text-align: justify;
+         justify-content: center;
+         
+     }
+     section.madeeasy > div {
+         width: 100%;
+     }
+     section.madeeasy h1 {
+         font-size: 40px;
+     }
+     section.madeeasy p {
+         font-size: 20px;
+         padding: 20px 0px;
+         color: #535558;
+     }
+     section.madeeasy button {
+         padding: 15px 30px;
+         border: none;
+         font-size: 20px;
+         margin: 5% 30%;
+     }
+     section.madeeasy img {
+          width: 100%; 
+     }
+      
+     .teamsection .heading {    
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        align-items: center;
+        text-align: justify;
+     }
+     .teamsection .heading > div {
+         width: 100%;
+     }
+     .teamsection .heading h2 {
+         font-size: 40px;
+         padding-right: 0%;
+         text-align: center;
+     }
+     .teamsection .heading p {
+         font-size: 20px;
+     }
+     .teamsection .teamlist {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+         padding: 30px 0;
+     }
+     .teamsection .teamlist > div {
+         width: 100%;
+     }
+     .teamsection .teamlist h2 {
+         font-size: 25px;       
+         padding-top: 20px;
+     }
+     .teamsection .teamlist p {
+         text-align: justify;
+         padding: 15px 0;
+         font-size: 20px;
+     }
+     .teamsection button {
+         padding: 10px 25px;
+         font-size: 20px;
+         margin: 0 30%;
+         margin-bottom: 25px;
+     }
+     footer .logo_social {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .social{
+         margin-top: 30px;
+     }
+     footer .menus {
+         justify-content: flex-start;        
+         flex-wrap: wrap;
+         margin: 0% 5%;
+         padding: 5% 0;
+     }
+     footer .menus .menu {
+        width: 50%;
+     }
+}
+
+@media  screen and (min-width: 769px) and (max-width: 992px){ 
+      
+   
+    header ul li {        
+        font-size: 19px;
+        padding: 0 3px;
+    }
+    header ul li a {
+        padding: 8px 15px;
+    } 
+    li.talk {
+         margin-left:20px; 
+    }
+     header .banner {
+         display: flex;
+         justify-content: space-between;
+     }
+     header .banner > div {
+         width: 50%; 
+         padding: 70px 20px;
+     }
+     header .banner img {
+         width: 100%;
+     }
+     header .banner h1 {
+         font-size: 55px;
+     }
+     header .banner p {
+         font-size: 24px;
+         padding: 20px 0;
+     }
+     .banner .newsletter input {
+         padding-left: 45px;
+         font-size: 20px;
+         height: 60px;
+     }
+     .banner .newsletter img {
+         width: 20px;
+         top: 50%px;
+         left: 15px;
+     }
+     header .banner button {
+         
+         padding: 15px 15px;
+         font-size: 20px;
+         top: 6px;
+         right: -15%;
+     }
+ 
+ 
+     .connectbusiness h1 {
+         font-size: 55px;
+         padding: 0 15%;
+     }
+     .projectcount {
+         flex-direction: row;
+     }
+     .project h3 {
+         font-size: 40px;
+         padding-top: 40px;
+     }
+     .project p {
+         font-size: 22px;
+     }
+     .connectbusiness img {
+         margin-top: 60px;
+     }
+     section.madeeasyheading {
+         padding: 0px 5%;
+         font-size: 39px;
+     }
+     section.madeeasy {
+         flex-wrap: wrap;
+         margin-top: 50px;
+         margin-bottom: 25px;
+         text-align: justify;
+         
+     }
+     section.madeeasy > div {
+         width: 49%;
+     }
+     section.madeeasy h1 {
+         font-size: 50px;
+     }
+     section.madeeasy p {
+         font-size: 22px;
+         padding: 30px 0px;
+     }
+     section.madeeasy button {
+         padding: 15px 30px;
+         border: none;
+         font-size: 22px;
+     }
+     section.madeeasy img {
+          width: 100%; 
+     }
+      
+     .teamsection .heading {   
+        padding: 50px 0;
+        text-align: justify;
+     }
+     
+     .teamsection .heading h2 {
+         font-size: 52px;
+         padding-right: 5%;
+         text-align: justify;
+     }
+     .teamsection .heading p {
+         font-size: 22px;
+     }
+     .teamsection .teamlist {
+         
+         padding: 30px 0;
+     }
+     
+     .teamsection .teamlist h2 {
+         font-size: 28px;       
+         padding-top: 25px;
+     }
+     .teamsection .teamlist p {
+         text-align: justify;
+         padding: 20px 0;
+         font-size: 22px;
+     }
+     section.teamsection {
+        display: flex;
+        flex-direction: column;
+    }
+     .teamsection button {
+         font-size: 22px;
+         margin: 0 30%;
+         margin-bottom: 25px;
+     }
+     
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media  screen and (min-width: 993px) and (max-width: 1200px){ 
+    header ul li {      
+       
+        padding: 0 13px;
+    }
+    header ul li a {
+        padding: 8px 15px;
+    } 
+    li.talk {
+         margin-left:20px; 
+    }
+     header .banner {
+         display: flex;
+         justify-content: space-between;
+     }
+     header .banner > div {
+         width: 50%; 
+         padding: 70px 20px;
+     }
+     header .banner img {
+         width: 100%;
+     }
+     header .banner h1 {
+         font-size: 70px;
+     }
+     header .banner p {
+         font-size: 26px;
+         padding: 22px 0;
+     }
+     .banner .newsletter input {
+         padding-left: 45px;
+         font-size: 20px;
+         height: 60px;
+     }
+     .banner .newsletter img {
+         width: 20px;
+         top: 50%px;
+         left: 15px;
+     }
+     header .banner button {
+         
+         padding: 15px 15px;
+         font-size: 20px;
+         top: 6px;
+         right: -11%;
+     }
+ 
+ 
+     .connectbusiness h1 {
+         font-size: 60px;
+         padding: 0 20%;
+     }
+     .projectcount {
+         flex-direction: row;
+     }
+     .project h3 {
+         font-size: 43px;
+         padding-top: 45px;
+     }
+     .project p {
+         font-size: 24px;
+     }
+     .connectbusiness img {
+         margin-top: 60px;
+     }
+     section.madeeasyheading {
+         padding: 0px 5%;
+         font-size: 45px;
+     }
+     section.madeeasy {
+         flex-wrap: wrap;
+         margin-top: 50px;
+         margin-bottom: 25px;
+         text-align: justify;
+         
+     }
+     section.madeeasy > div {
+         width: 49%;
+     }
+     section.madeeasy h1 {
+         font-size: 50px;
+     }
+     section.madeeasy p {
+         font-size: 24px;
+         padding: 30px 0px;
+     }
+     section.madeeasy button {
+         padding: 15px 30px;
+         border: none;
+         font-size: 24px;
+     }
+     section.madeeasy img {
+          width: 100%; 
+     }
+      
+     .teamsection .heading {   
+        padding: 50px 0;
+        text-align: justify;
+     }
+     
+     .teamsection .heading h2 {
+         font-size: 52px;
+         padding-right: 5%;
+         text-align: justify;
+     }
+     .teamsection .heading p {
+         font-size: 24px;
+     }
+     .teamsection .teamlist {
+         
+         padding: 30px 0;
+     }
+     
+     .teamsection .teamlist h2 {
+         padding-top: 25px;
+     }
+     .teamsection .teamlist p {
+         text-align: justify;
+         padding: 20px 0;
+         font-size: 22px;
+     }
+     section.teamsection {
+        display: flex;
+        flex-direction: column;
+    }
+     .teamsection button {
+         font-size: 22px;
+         margin: 0 40%;
+         margin-bottom: 25px;
+     }
+}
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { }
-
-/* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {  }
+@media  screen and (min-width: 1201px){ 
+    header ul li {      
+       
+        padding: 0 13px;
+    }
+    header ul li a {
+        padding: 8px 15px;
+    } 
+    li.talk {
+         margin-left:20px; 
+    }
+     header .banner {
+         display: flex;
+         justify-content: space-between;
+     }
+     header .banner > div {
+         width: 50%; 
+         padding: 70px 20px;
+     }
+     header .banner img {
+         width: 100%;
+     }
+     header .banner h1 {
+         font-size: 70px;
+     }
+     header .banner p {
+         font-size: 26px;
+         padding: 22px 0;
+     }
+     .banner .newsletter input {
+         padding-left: 45px;
+         font-size: 20px;
+         height: 60px;
+     }
+     .banner .newsletter img {
+         width: 20px;
+         top: 50%px;
+         left: 15px;
+     }
+     header .banner button {
+         
+         padding: 15px 15px;
+         font-size: 20px;
+         top: 6px;
+         right: -11%;
+     }
+ 
+ 
+     .connectbusiness h1 {
+         font-size: 60px;
+         padding: 0 20%;
+     }
+     .projectcount {
+         flex-direction: row;
+     }
+     .project h3 {
+         font-size: 43px;
+         padding-top: 45px;
+     }
+     .project p {
+         font-size: 24px;
+     }
+     .connectbusiness img {
+         margin-top: 60px;
+     }
+     section.madeeasyheading {
+         padding: 0px 5%;
+         font-size: 45px;
+     }
+     section.madeeasy {
+         flex-wrap: wrap;
+         margin-top: 50px;
+         margin-bottom: 25px;
+         text-align: justify;
+         
+     }
+     section.madeeasy > div {
+         width: 49%;
+     }
+     section.madeeasy h1 {
+         font-size: 50px;
+     }
+     section.madeeasy p {
+         font-size: 24px;
+         padding: 30px 0px;
+     }
+     section.madeeasy button {
+         padding: 15px 30px;
+         border: none;
+         font-size: 24px;
+     }
+     section.madeeasy img {
+          width: 100%; 
+     }
+      
+     .teamsection .heading {   
+        padding: 50px 0;
+        text-align: justify;
+     }
+     
+     .teamsection .heading h2 {
+         font-size: 52px;
+         padding-right: 5%;
+         text-align: justify;
+     }
+     .teamsection .heading p {
+         font-size: 24px;
+     }
+     .teamsection .teamlist {
+         
+         padding: 30px 0;
+     }
+     
+     .teamsection .teamlist h2 {
+         padding-top: 25px;
+     }
+     .teamsection .teamlist p {
+         text-align: justify;
+         padding: 20px 0;
+         font-size: 22px;
+     }
+     section.teamsection {
+        display: flex;
+        flex-direction: column;
+    }
+     .teamsection button {
+         font-size: 22px;
+         margin: 0 40%;
+         margin-bottom: 25px;
+     }
+}

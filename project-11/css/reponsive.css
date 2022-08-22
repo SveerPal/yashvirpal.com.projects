@@ -1,160 +1,611 @@
-
-@media  screen and (max-width: 576px) {
-    nav{
-        justify-content: space-between;
-        margin: 10px 5%;
-    }
-    .nav-items{
-        display: none;
-    }
-    
-    /* nav img{
-        width: 50%;
-    }
-    nav img:last-child{
-        width: 50%;
-    } */
-    .intro-section{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0 5%;
-        height: unset;
-    }
-    .headphone-div {
-         position: unset; 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .right-section {
-        width: unset;
-    }
-    .right-section img[alt="headphone"] {
-        right: 0;
-        left: 0;
-        z-index: -1;
-        width: 65%;
-    }
-    img.discount {
-        position: absolute;
-        top: 292px;
-        right: 0;
-        left: 0%;
-        width: 26%;
-    }
-    .discount-content {
-        position: absolute;
-        top: 333px;
-        right: 0;
-        left: 0;
-        color: #fff;
-    }
-
-    .left-section {
-        width: unset;
-        padding-top: 0;
-    }
-    .left-section h3 {
-        font-size: 20px;
-    }
-
-    .left-section h1 {
-        font-size: 25px;
-    }
-    .left-section .sub-headline {
-        font-size: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .left-section .sub-headline::before {        
-        width: 10px;
-        height: 11px;        
-        border-radius: 50%;
-        padding: 2px;
-        margin-left: 20px;
-    }
-    .left-section .sub-headline img {
-        display: none;
-    }
-    .left-section p {
-        font-size: 12px;       
-        margin: 20px 0;
-    }
-    button {
-        padding: 10px 20px;
-        font-size: 15px;
-    }
-
-}
-@media screen and (min-width: 600px) {}
-
-@media  screen and (min-width: 768px) { 
-    .navbar-container{
-        padding: 15px 5%;
-    }
-    .navbar-container ul li:first-child {
-        font-weight: 900;
-        font-size: 22px;
-    }
-    .navbar-container ul li{
-        font-size: 18px;
-        padding: 2px 10px 2px 10px;
-    }
-    .nav-button {
-        border: 1px solid #000;
-        
-        padding: 5px 25px;
-        background: #fff;
-        font-size: 24px;
-    }
-    .search-icon svg {
-        height: 28px;
-        padding-right: 8px;
-    }
-
-    span.square {
+@media  screen and (max-width: 568px){
+    header{
        
-        top: 25%;
-        right: 60px;
-        left: unset;
-        z-index: -1;
+        padding: 30px 0;
+    }
+    nav ul > *:not(:last-child) {
+        display: none;
+    }
+    .logo img{
+        width: 80%;
+    }
+    header ul li a {
+        
+        padding: 5px 10px;
+        border-radius: 6px;
+    }
+    section.servicesection{
+       flex-direction: column-reverse;
+        margin-top: 40px
+    
+    }
+    section.servicesection h1 {
+        font-size: 45px;
+        text-align: justify;
+    }
+    section.servicesection img {
+        width: auto;
+    }
+    section.servicesection p {
+        font-size: 20px;
+        padding: 16px 0;
+        text-align: justify;
+    }
+    section.servicesection button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 30px 0;
     }
 
-    span.square::after {
-        
-        top: 75%;
-        right: 0; 
-        
-    }
-    span.globe {
-         top: 0; 
-        position: absolute;
-        left: 35%;
-    }
-    .hero-container-right {
-        float: none;
+    section.servicesection > div {
         width: 100%;
         text-align: center;
     }
-    p.hero-description {
-        padding: 0;
+    .serviceprovidelist .heading {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
     }
-    .globe + div {
-        float: none;
+    .serviceprovidelist .heading > div {
+        width: auto; 
     }
-    span.star {
-        float: none;
+    .serviceprovidelist .heading h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+    .serviceprovidelist .heading p {
+        font-size: 23px;
+        padding: 20px 0;
+    }
+    .serviceprovidelist .servicelist {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .serviceprovidelist .servicelist > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .serviceprovidelist .servicelist p {
+        font-size: 23px;
+    }
+    .flexprice h2 {
+        font-size: 45px;
+        padding: 20px 0;
+    }
+    .pricelist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;        
+        padding: 30px 0;
+    }
+    .pricelist .package {
+        padding: 15px 0px;
+        width: 100%; 
+        text-align: center;
+        margin: 10px 0;
+    }
+    .package h3 {
+        font-size: 30px;
+    }
+    .package p {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .package ul li {
+        font-size: 20px;
+        padding: 5px 0;
+    }
+    .package ul {
+        padding-top: 30px;
+    }
+    .price {
+        margin: 30px 0;
+    }
+    .package .price button {
+       
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .package:nth-child(2) .price button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .testimonialheading {
+        margin-top: 50px;
+    }
+    .testimonialheading h1 {
+        font-size: 45px;
+    }
+    .testimonialheading p {
+        padding: 23px 5%;
+        font-size: 23px;
+        text-align: justify;
+    }
+    .testimoniallist {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .testimonials {
+         width: auto; 
+        border-radius: 8px;
+        border: 1px solid #8991a3;
+        margin: 10px 5%;
+        padding: 10px;
+    }
+    .testimonials p {
+        font-size: 20px;
+    }
+    .registerblue {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+    }
+    .registerblue > * {
+        width: auto;
+    }
+    .registerblue h1 {
+        font-size: 45px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 5% 0;
+        margin: 0 5%;
+        align-items: center;
+        text-align: center;
+    }
+    footer .logo img{
+        width: auto;
+    }
+    footer .logo {
+         width: 100%;
+    }
+    footer > * {
+        margin: 20px 0;
+        width: 50%;
+    }
+    footer h4 {
+        font-size: 23px;
+    }
+    .social ul {
+        justify-content: center;
+    }
+    footer ul li {
+        font-size: 16px;
+        padding-top: 18px;
+        margin: 5px;
+    }
+    
+}
+@media screen and (min-width: 569px) and (max-width: 768px) {
+    header{
+       
+        padding: 30px 0;
+    }
+    header .logo{
+        width: 20%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    header ul li {
+        
+        font-size: 14px;
+        padding: 0 1px;
+    }
+    header ul li a {
+        
+        padding: 2px 5px;
+        border-radius: 6px;
+    }
+    section.servicesection{
+       flex-direction: column-reverse;
+        margin-top: 40px
+    
+    }
+    section.servicesection h1 {
+        font-size: 45px;
+        text-align: justify;
+    }
+    section.servicesection img {
+        width: auto;
+    }
+    section.servicesection p {
+        font-size: 20px;
+        padding: 16px 0;
+        text-align: justify;
+    }
+    section.servicesection button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 30px 0;
+    }
+
+    section.servicesection > div {
+        width: 100%;
+        text-align: center;
+    }
+    .serviceprovidelist .heading {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .serviceprovidelist .heading > div {
+        width: auto; 
+    }
+    .serviceprovidelist .heading h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+    .serviceprovidelist .heading p {
+        font-size: 23px;
+        padding: 20px 0;
+    }
+    .serviceprovidelist .servicelist {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .serviceprovidelist .servicelist > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .serviceprovidelist .servicelist p {
+        font-size: 23px;
+    }
+    .flexprice h2 {
+        font-size: 45px;
+        padding: 20px 0;
+    }
+    .pricelist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;        
+        padding: 30px 0;
+    }
+    .pricelist .package {
+        padding: 15px 0px;
+        width: 100%; 
+        text-align: center;
+        margin: 10px 0;
+    }
+    .package h3 {
+        font-size: 30px;
+    }
+    .package p {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .package ul li {
+        font-size: 20px;
+        padding: 5px 0;
+    }
+    .package ul {
+        padding-top: 30px;
+    }
+    .price {
+        margin: 30px 0;
+    }
+    .package .price button {
+       
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .package:nth-child(2) .price button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .testimonialheading {
+        margin-top: 50px;
+    }
+    .testimonialheading h1 {
+        font-size: 45px;
+    }
+    .testimonialheading p {
+        padding: 23px 5%;
+        font-size: 23px;
+        text-align: justify;
+    }
+    .testimoniallist {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .testimonials {
+         width: auto; 
+        border-radius: 8px;
+        border: 1px solid #8991a3;
+        margin: 10px 5%;
+        padding: 10px;
+    }
+    .testimonials p {
+        font-size: 20px;
+    }
+    .registerblue {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+    }
+    .registerblue > * {
+        width: auto;
+    }
+    .registerblue h1 {
+        font-size: 45px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 5% 0;
+        margin: 0 5%;
+        align-items: center;
+        text-align: center;
+    }
+    footer .logo img{
+        width: auto;
+    }
+    footer .logo {
+         width: 100%;
+    }
+    footer > * {
+        margin: 20px 0;
+        width: 50%;
+    }
+    footer h4 {
+        font-size: 23px;
+    }
+    .social ul {
+        justify-content: center;
+    }
+    footer ul li {
+        font-size: 16px;
+        padding-top: 18px;
+        margin: 5px;
+    }
+}
+
+@media  screen and (min-width: 769px) and (max-width: 992px){ 
+    header{
+       
+        padding: 40px 0;
+    }
+    header .logo{
+        width: 20%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    header ul li {
+        
+        font-size: 18px;
+        padding: 0 4px;
+    }
+    header ul li a {
+        
+        padding: 7px 10px;
+        border-radius: 6px;
+    }
+    section.servicesection{
+        margin-top: 40px;
+        flex-basis: 50%;
+    }
+    section.servicesection h1 {
+        font-size: 55px;
+        text-align: justify;
+    }
+    .rightletter,.rightleft{
+        display: flex;
+    }
+    section.servicesection img {
+        
+        width: 100%;
+        height: auto;
+    }
+    section.servicesection p {
+        font-size: 25px;
+        padding: 16px 0;
+    }
+    section.servicesection button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 30px 0;
+    }
+
+    section.servicesection > div {
+        width: 50%;
+    }
+    .serviceprovidelist .heading {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .serviceprovidelist .heading > div {
+        width: auto; 
+    }
+    .serviceprovidelist .heading h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+    .serviceprovidelist .heading p {
+        font-size: 23px;
+        padding: 20px 0;
+    }
+    .serviceprovidelist .servicelist {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .serviceprovidelist .servicelist > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .serviceprovidelist .servicelist p {
+        font-size: 23px;
+    }
+    .flexprice h2 {
+        font-size: 45px;
+        padding: 20px 0;
+    }
+    .pricelist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;        
+        padding: 30px 0;
+    }
+    .pricelist .package {
+        padding: 15px 0px;
+        width: 100%; 
+        text-align: center;
+        margin: 10px 0;
+    }
+    .package h3 {
+        font-size: 30px;
+    }
+    .package p {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .package ul li {
+        font-size: 20px;
+        padding: 5px 0;
+    }
+    .package ul {
+        padding-top: 30px;
+    }
+    .price {
+        margin: 30px 0;
+    }
+    .package .price button {
+       
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .package:nth-child(2) .price button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .testimonialheading {
+        margin-top: 50px;
+    }
+    .testimonialheading h1 {
+        font-size: 45px;
+    }
+    .testimonialheading p {
+        padding: 23px 5%;
+        font-size: 23px;
+        text-align: justify;
+    }
+    .testimoniallist {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .testimonials {
+         width: auto; 
+        border-radius: 8px;
+        border: 1px solid #8991a3;
+        margin: 10px 5%;
+        padding: 10px;
+    }
+    .testimonials p {
+        font-size: 20px;
+    }
+    .registerblue {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+    }
+    .registerblue > * {
+        width: auto;
+    }
+    .registerblue h1 {
+        font-size: 45px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 5% 0;
+        margin: 0 5%;
+        align-items: center;
+        text-align: center;
+    }
+    footer .logo img{
+        width: auto;
+    }
+    footer .logo {
+         width: 100%;
+    }
+    footer > * {
+        margin: 20px 0;
+        width: 50%;
+    }
+    footer h4 {
+        font-size: 23px;
+    }
+    .social ul {
+        justify-content: center;
+    }
+    footer ul li {
+        font-size: 16px;
+        padding-top: 18px;
+        margin: 5px;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media  screen and (min-width: 993px) and (max-width: 1200px){ 
+   
+}
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { }
+@media  screen and (min-width: 1201px) and (max-width: 1400px){ 
+   
+}
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) { 
+   
+ }
