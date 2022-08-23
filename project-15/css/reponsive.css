@@ -1,26 +1,535 @@
 @media  screen and (max-width: 568px){
+    .section-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .hmenu{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       padding: 20px 0;
+    }
+    .hmenu  li{
+        padding: 5px;
+    }
+    .b-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .b-text h5 {
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+    }
+    .b-text h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .b-text p {
+        font-size: 20px;
+    }
+    .b-text button {
+        align-self: center;
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 20px auto;
+    }
     
+    
+    .bannercontainer {
+        display: grid;
+        
+        grid-template-columns: 1fr;
+        padding: 0px 30px;
+        align-items: center;
+        text-align: justify;
+    }
+    img.b_img {
+        width: 100%;
+    }
+    .services {       
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 10%;
+    }
+    .services .service {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service img {
+        width: 80px;
+    }
+    .service h1 {
+        font-size: 30px;
+        padding: 10px 0px;
+    }
+    .service p {
+        font-size: 20px;
+    }
+    .service label {
+        font-size: 18px;
+        padding: 0px;
+    }
+
+    .experince {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .yearexperince p:first-child {
+        font-size: 70px !important;
+    }
+    .expr p:first-child {
+        font-size: 50px;
+    }
+
+    
+    .fetureproject .container .projects {
+        grid-template-columns: 1fr;
+        text-align: justify;
+    }
+    .fetureproject .container .projects h2 {
+        font-size: 27px;
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .fetureproject .container .projects .viewbutton button {       
+        padding: 10px 25px;
+        margin: 20px 0px;
+        font-size: 20px;
+    }
+    .fetureproject .container .projects .viewbutton {
+        justify-content: center;
+    }
+    
+    .projectlist {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .projectlist .project {
+        margin: 0;
+        flex: 1 0 47%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .project .projectimg {
+        padding: 10px 0px;
+    }
+    .projectdescription p {
+        font-size: 20px;
+        padding: 10px 0;
+        font-weight: 600;
+    }
+    .projectdescription a {
+        margin-bottom: 15px;
+    }
+    .worktogether h1 {
+        font-size: 45px;
+        padding: 20px 0;
+    }
+
+
+    .worktogether .container {
+        grid-template-columns:  1fr;
+        padding: 10px;
+    }
+    .fmenuu {
+        text-align: center;
+        padding: 50px 5%;
+    }
+    .fmenuu li {
+        width: 35%;
+        padding: 15px 0;
+    }
+    .footer .container {
+        grid-template-columns: 1fr;
+        padding: 11px 14.5%;
+       
+    }
+    .fimg,.socialicon {
+       padding-left: 0px; 
+       justify-self: center;
+       padding: 20px;
+    }
+    .footer .container ul li {
+        padding: 0px 10px;
+    }
 
 }
 @media screen and (min-width: 569px) and (max-width: 768px) {
-   
+    .section-header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5%;
+    }
+    .hmenu{
+       display: flex;
+       justify-content: end;
+       align-items: center;
+    }
+    nav ul li a {
+        padding: 0px 4px;
+        font-size: 14px;
+    }
+    .carrot::after {
+        font-size: 14px;
+    }
+    
+    .b-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .b-text button {
+        align-self: center;
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 20px auto;
+    }
+    
+    
+    .bannercontainer {
+        display: grid;
+        
+        grid-template-columns: 1fr;
+        padding: 0px 30px;
+        align-items: center;
+        text-align: justify;
+    }
+    img.b_img {
+        width: 100%;
+    }
+    .services {       
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 10%;
+    }
+    .services .service {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .experince {
+        grid-template-columns: repeat(1, 1fr);
+    }
+        
+    .fetureproject .container .projects {
+        grid-template-columns: 1fr;
+        text-align: justify;
+    }
+    .fetureproject .container .projects h2 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .fetureproject .container .projects p {
+        font-size: 25px;
+        padding: 20px 0;
+    }
+    .fetureproject .container .projects .viewbutton {
+        justify-content: center;
+    }
+    
+    .projectlist {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .projectlist .project {
+        margin: 0;
+        flex: 1 0 47%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .project .projectimg {
+        padding: 10px 0px;
+    }
+    
+    .worktogether h1 {
+        text-align: center;
+    }
+    .worktogether p {
+        font-size: 25px;
+        text-align: center;
+    }
+    .worktogether .wtbutton button {        
+        font-size: 22px;
+    }
+
+    .worktogether .container {
+        grid-template-columns:  1fr;
+        padding: 10px;
+    }
+    .fmenuu {
+        text-align: center;
+        padding: 50px 5%;
+    }
+    .fmenuu li {
+        width: 35%;
+        padding: 15px 0;
+        font-size: 23px;
+    }
+    .footer .container {
+        grid-template-columns: 1fr;
+        padding: 11px 14.5%;
+       
+    }
+    .fimg,.socialicon {
+       padding-left: 0px; 
+       justify-self: center;
+       padding: 20px;
+    }
+    .footer .container ul li {
+        padding: 0px 10px;
+    } 
 }
 
 @media  screen and (min-width: 769px) and (max-width: 992px){ 
+    .section-header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5%;
+    }
+    .hmenu{
+       display: flex;
+       justify-content: end;
+       align-items: center;
+    }
+    nav ul li a {
+        padding: 0px 15px;
+        
+    }
+    
+    
+    .b-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .b-text button {
+        align-self: center;
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 20px auto;
+    }
+    
+    
+    .bannercontainer {
+        display: grid;
+        
+        grid-template-columns: 1fr;
+        padding: 0px 30px;
+        align-items: center;
+        text-align: justify;
+    }
+    img.b_img {
+        width: 100%;
+    }
+    .services {       
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 10%;
+    }
+    .services .service {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .experince {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .expr.yearexperince {
+        padding: 10% 25% !important;
+    }
    
+        
+    .fetureproject .container .projects {
+        grid-template-columns: 1fr;
+        text-align: justify;
+    }
+    .fetureproject .container .projects h2 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .fetureproject .container .projects p {
+        font-size: 25px;
+        padding: 20px 0;
+    }
+    .fetureproject .container .projects .viewbutton {
+        justify-content: center;
+    }
+    
+    .projectlist {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .projectlist .project {
+        margin: 0;
+        flex: 1 0 47%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .project .projectimg {
+        padding: 10px 0px;
+    }
+    
+    .worktogether h1 {
+        text-align: center;
+    }
+    .worktogether p {
+        font-size: 25px;
+        text-align: center;
+    }
+    .worktogether .wtbutton button {        
+        font-size: 22px;
+    }
+
+    .worktogether .container {
+        grid-template-columns:  1fr;
+        padding: 10px;
+    }  
 }
 
 /* Large devices (desktops, 992px and up) */
 @media  screen and (min-width: 993px) and (max-width: 1200px){ 
-   
+    .section-header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5%;
+    }
+    .hmenu{
+       display: flex;
+       justify-content: end;
+       align-items: center;
+    } 
+    
+    .bannercontainer {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .b-text button {
+        align-self: center;
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 20px auto;
+    }
+    img.b_img {
+        width: 100%;
+    }
+    .services {       
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 5% 10%;
+    }
+        
+    .experince {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media  screen and (min-width: 1201px) and (max-width: 1400px){ 
-   
+    .section-header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5%;
+    }
+    .hmenu{
+       display: flex;
+       justify-content: end;
+       align-items: center;
+    } 
+    
+    .bannercontainer {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .b-text button {
+        align-self: center;
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 20px auto;
+    }
+    img.b_img {
+        width: 100%;
+    }
+    .services {       
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 5% 10%;
+    }
+        
+    .experince {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) { 
-   
+    .section-header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5%;
+    }
+    .hmenu{
+       display: flex;
+       justify-content: end;
+       align-items: center;
+    } 
+    
+    .bannercontainer {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .b-text button {
+        align-self: center;
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 20px auto;
+    }
+    img.b_img {
+        width: 100%;
+    }
+    .services {       
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 5% 10%;
+    }
+        
+    .experince {
+        grid-template-columns: repeat(3, 1fr);
+    }
  }
