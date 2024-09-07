@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashvir Pal Project (HTML, CSS, JavaScript)</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #141414;
+            /* Background color from yashvirpal.com */
+            color: #ffffff;
+            /* White text color */
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+            background-image: url(https://yashvirpal.com/dist/assets/img/page-bg-dark-1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        #welcome-text {
+            font-size: 2rem;
+            color: #fff;
+            /* Gold color */
+            opacity: 0;
+            animation: fadeInText 2s ease-in-out forwards;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            opacity: 0;
+            animation: fadeInLink 4s ease-in-out forwards;
+        }
+
+        a {
+            text-decoration: none;
+            color: #d4af37;
+            /* Gold color for the link */
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #d4af37;
+            transition: width 0.3s ease-in-out;
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        a:hover {
+            color: #b8860b;
+            /* Darker gold on hover */
+        }
+
+        /* Fade-in animation for the welcome text */
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Fade-in animation for the link */
+        @keyframes fadeInLink {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="welcome-text"></div>
+    <h1><a href="https://yashvirpal.com">yashvirpal.com</a></h1>
+
+    <script>
+        // Typing effect for welcome text
+        const welcomeText = "Welcome to Yashvir Pal's Portfolio!";
+        let index = 0;
+
+        function typeText() {
+            if (index < welcomeText.length) {
+                document.getElementById("welcome-text").innerHTML += welcomeText.charAt(index);
+                index++;
+                setTimeout(typeText, 100); // Adjust typing speed here
+            }
+        }
+
+        // Trigger typing animation when page loads
+        window.onload = function () {
+            document.getElementById("welcome-text").style.opacity = "1";
+            typeText();
+        };
+    </script>
+
+</body>
+
+</html>
