@@ -1,0 +1,21 @@
+body{
+    background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%); 
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 29px;
+    text-align: center;
+  }
+  input {
+    padding: 5px;
+    border-radius: 8px;
+    height: 25px;
+  }
+  button{
+    padding: 5px;
+    border-radius: 8px;
+    height: 40px;
+  }

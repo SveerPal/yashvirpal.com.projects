@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Game</title>
+    <style>
+        .game {
+            height: 500px;
+            width: 500px;
+            border: 1px solid #333
+        }
+
+        .character {
+            height: 50px;
+            width: 40px;
+            position: relative;
+            top: 450px;
+
+        }
+
+        
+        .stone {
+            width: 20px;
+            height: 20px;
+            background-color: #ff0000;
+            top: 430px;
+            left: 480px;
+            position: relative;
+        }
+        .animation {
+            animation: jump 500ms infinite linear;
+        }
+        .animationStone {
+            animation: stone 2s infinite linear;
+        }
+
+
+        @keyframes stone {
+            0% {
+                left: 490px;
+            }
+
+            100% {
+                left: -40px
+            }
+        }
+
+        @keyframes jump {
+            0% {
+                top: 450px;
+            }
+
+            40% {
+                top: 350px
+            }
+
+            60% {
+                top: 350px
+            }
+
+            100% {
+                top: 450px
+            }
+        }
+    </style>
+</head>
+
+<body onclick="jump()">
+    <div class="game" id="game">
+        <img src="./bike-ride.gif" alt="" class="character">
+        <div class="stone">
+
+        </div>
+    </div>
+    <script>
+        let character=document.querySelector('.character')
+        let stone=document.querySelector('.stone')
+        function jump() {
+            character.classList.add('animation')
+            stone.classList.add('animationStone')
+            setTimeout(function(){
+                character.classList.remove('animation')
+            },500)
+        }
+        let accident=setInterval(function(){
+            let charPos=parseInt( window.getComputedStyle(character).getPropertyValue('top'))
+            let stonePos=parseInt(window.getComputedStyle(stone).getPropertyValue('left'))
+            if(charPos>420 && (stonePos<40 && stonePos>0)){
+                stone.classList.remove('animationStone')
+                alert("Game Over")
+            }
+               // console.log(charPos)
+           
+        },20)
+    </script>
+</body>
+
+</html>

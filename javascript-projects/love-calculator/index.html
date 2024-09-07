@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="playground">
+            <img class="mosquito" onclick="hitMosquito()" src="love.jpg" alt="" srcset="">
+            <h1>Calculate Your Love</h1>
+            <h3 class="result"></h3>
+        </div>
+        <div class="controls">
+            <input type="text" class="your_name" placeholder="Enter Your Name" />
+            <input type="text" class="your_love_name" placeholder="Enter Your Love Name" />
+            <button type="button" class="calculate" onclick="loveCalculate()">Calculate Now</button>
+        </div>
+    </div>
+    <script>
+        function loveCalculate(){
+           let your_name= document.querySelector('.your_name').value;
+           let your_love_name= document.querySelector('.your_love_name').value;
+           
+           if(your_name && your_love_name){
+                let total=Math.floor(Math.random()*100)
+                let str=(your_name+your_love_name).replace(/\s/g,"")
+                str=str.toLowerCase()
+                console.log(str)
+                if(localStorage.getItem(str)){
+                    total=localStorage.getItem(str)
+                }else{
+                    localStorage.setItem(str,total)
+                }
+                document.querySelector('.result').innerText=total;
+           }else{
+                alert('Please Enter Valid Name')
+           }
+        }
+    </script>
+</body>
+
+</html>
